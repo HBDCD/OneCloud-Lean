@@ -72,8 +72,8 @@ jobs:
     - name: Load onecloud
       run: |
         cd openwrt
-          mv $GITHUB_WORKSPACE/target/linux/meson target/linux
-          chmod -Rf 755 target/linux/meson
+          mv $GITHUB_WORKSPACE/target/linux/amlogic target/linux
+          chmod -Rf 755 target/linux/amlogic
 
     - name: Load custom feeds
       run: |

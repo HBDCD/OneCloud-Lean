@@ -73,7 +73,9 @@ jobs:
 
     - name: Load onecloud
       run: |
-        [ -e target ] && cp -rf target openwrt/
+        cd openwrt
+          mv $GITHUB_WORKSPACE/target/linux/meson target/linux
+          chmod -Rf 755 target/linux/meson
 
     - name: Load custom feeds
       run: |

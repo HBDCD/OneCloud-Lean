@@ -20,3 +20,4 @@
 +	}
  
  	state->polarity = PWM_POLARITY_NORMAL;
+ 
